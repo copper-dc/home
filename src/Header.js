@@ -12,13 +12,13 @@ const Header = () => {
       <div className= {isActive ? "header-section show" : "header-section"}>
           <span className="logo">COPPER</span>
           <ul className= {isActive ? "nav-list show" : "nav-list"}>
-            <li><a>Home</a></li>
-            <li><a>Commands</a></li>
-            <li><a>Features</a></li>
-            <li><a>Supports</a></li>
+            <li onClick={toggle}><a href="#about">Home</a></li>
+            <li onClick={toggle}><a href="#">Commands</a></li>
+            <li onClick={toggle}><a href="#features">Features</a></li>
+            <li onClick={toggle}><a href="#">Supports</a></li>
           </ul>
       </div>
-      <span className="toggle-btn" onClick={()=>toggle()}>
+      <span className="toggle-btn" onClick={toggle}>
         <FaBarsStaggered />
       </span>
     </>
