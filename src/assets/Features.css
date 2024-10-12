@@ -6,8 +6,9 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap:20px;
-    justify-content: space-between;
+    column-gap:20px;
+    row-gap: 50px;
+    justify-content: space-around;
 }
 .features-container li {
     width: 150px;
@@ -18,8 +19,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    letter-spacing: 1px;
-    word-spacing: 5px;
+    letter-spacing: 0.5px;
+    word-spacing: 10px;
     line-height: 25px;
     transition: transform 0.25s;
     color: grey;

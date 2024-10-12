@@ -3,6 +3,7 @@
     padding: 0px 40px;
     display: flex;
     align-items: center;
+    background-color: white;
 }
 .logo {
     background: -webkit-linear-gradient(80deg ,#051869, #164ec9,#a9beed);
@@ -19,7 +20,7 @@
 }
 .nav-list {
     width: 80%;
-    font-size: 20px;
+    font-size: 15px;
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -54,6 +55,9 @@
         left:50vw;
         transform: translate(-50%,0%);
         z-index:999999;
+    }
+    .nav-list a{
+        color: white;
     }
     .header-section{
         padding: 0px;
