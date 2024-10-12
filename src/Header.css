@@ -27,6 +27,10 @@
     justify-content: space-around;
     transition: all 0.2s;
 }
+.nav-list a {
+    text-decoration: none;
+    color: rgb(85, 81, 81);
+}
 .nav-list li:hover {
     cursor: pointer;
 }
@@ -65,7 +69,7 @@
         height: 60vh;
         flex-direction: column;
         align-items: center;
-        position: absolute;
+        position: fixed;
         top: 10vh;
         left: -1000vw;
     }

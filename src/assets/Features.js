@@ -2,7 +2,7 @@ import "./Features.css"
 
 const Features = () => {
   return (
-    <div className="features-section">
+    <div id="features" className="features-section">
         <ul className="features-container">
             <li>Automated moderation (delete inappropriate messages, ban/kick, mute)</li>
             <li>Welcoming new members (welcome messages, role assignment)</li>
