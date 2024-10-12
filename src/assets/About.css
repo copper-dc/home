@@ -15,26 +15,30 @@
     height: 40px;
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 8px red;
+    box-shadow: 1px 1px 8px rgb(219, 133, 133,0.9);
     background-color: transparent;
     margin-right: 20px;
     margin-bottom: 30px;
     word-spacing: 2px;
     letter-spacing: 1px;
+    transition: scale 0.5s;
 }
 .about-content p{
     text-indent: 20px;
     line-height: 30px;
     word-spacing: 2px;
     letter-spacing: 1px;
+    background: linear-gradient(45deg,blue,rgb(48, 48, 92));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .about-content button:hover{
     cursor: pointer;
+    scale: 1.03;
 }
 
 @media screen and (max-width: 500px) {
     .about {
         flex-direction: column;
     }
-
 }

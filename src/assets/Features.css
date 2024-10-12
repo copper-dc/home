@@ -1,0 +1,29 @@
+.features-section {
+    margin-top: 100px;
+
+}
+.features-container {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: space-between;
+}
+.features-container li {
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 25px;
+    transition: transform 0.25s;
+}
+.features-container li:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+}
