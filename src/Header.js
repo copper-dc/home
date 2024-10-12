@@ -6,7 +6,6 @@ const Header = () => {
   const [isActive,setISActive]=useState(false);
   const toggle = () => {
     setISActive(!isActive);
-    console.log(isActive);
   }
   return (
     <>
