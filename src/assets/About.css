@@ -1,44 +1,36 @@
 .about {
     display: flex;
-}
-.about img {
-    width: 300px;
-    height: 300px;
-}
-.about-content {
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
+    row-gap: 50px;
+    padding: 20px;
+    margin-top: 150px;
+    margin-left: 10px ;
+    margin-right :10px ;
 }
-.about-content button {
-    width: 100px;
+.about button {
+    width: 150px;
     height: 40px;
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 10px rgb(219, 133, 133,0.5);
-    background-color: transparent;
+    background-color: #004bdd;
+    color: white;
     margin-right: 20px;
     margin-bottom: 30px;
+    padding: 10px 20px;
     word-spacing: 2px;
     letter-spacing: 1px;
     transition: scale 0.5s;
+    font-variant: small-caps;
 }
-.about-content p{
-    text-indent: 20px;
-    line-height: 30px;
-    word-spacing: 2px;
+.about p{
+    text-indent: 50px;
+    line-height: 45px;
+    word-spacing: 5px;
     letter-spacing: 1px;
-    background: linear-gradient(45deg,blue,rgb(48, 48, 92));
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
 }
-.about-content button:hover{
+.about button:hover{
     cursor: pointer;
     scale: 1.03;
-}
-
-@media screen and (max-width: 500px) {
-    .about {
-        flex-direction: column;
-    }
 }

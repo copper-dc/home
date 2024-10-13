@@ -1,19 +1,28 @@
 .header-section {
-    height: 10vh;
-    padding: 0px 40px;
+    background: #333333;
     display: flex;
     align-items: center;
-    background-color: white;
+    border-radius: 20px;
+    position: fixed;
+    top:20px;
+    right: 20px;
+    left: 20px;
+    transition: display 1s;
+}
+.nav-list li {
+    width: 100px;
+    padding: 10px 0px;
+    border-radius: 15px ;
+    text-align: center;
+    transition: all 0.45s ease;
 }
 .logo {
-    background: -webkit-linear-gradient(80deg ,#051869, #164ec9,#a9beed);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    color:#6951ff;
     font-size: 25px;
     font-weight:900;
-    width: 20%;
     height: 10vh;
     padding-left: 30px;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,19 +30,21 @@
 .nav-list {
     width: 80%;
     font-size: 15px;
-    padding: 0px;
+    padding: 0px 20px;
     margin: 0px;
     list-style: none;
     display: flex;
     justify-content: space-around;
-    transition: all 0.2s;
 }
 .nav-list a {
     text-decoration: none;
-    color: rgb(85, 81, 81);
+    color: white;
 }
-.nav-list li:hover {
+.nav- li:hover {
     cursor: pointer;
+}
+.box:hover{
+    box-shadow: 0px 0px 5px rgb(252, 211, 211);
 }
 .toggle-btn {
     font-size: 30px;
@@ -42,40 +53,63 @@
     top: 20px;
     display: none;
     z-index: 999;
+    color: white;
 }
 .toggle-btn:hover {
     cursor: pointer;
 }
-
+.login {
+    background-color: #6951ff;
+    transition: scale 0.2s;
+}
+.login:hover{
+    scale: 1.015;
+}
 @media screen and (max-width: 768px) {
     .logo{
-        width: 40%;
+        width: auto;
     }
     .nav-list.show{
-        left:50vw;
-        transform: translate(-50%,0%);
-        z-index:999999;
+        display: inherit;
+        height: 60%;
+        top:0;
+    }
+    .header-section.show {
+        height: 100%;
     }
     .nav-list a{
         color: white;
+        font-size: 18px;
     }
     .header-section{
+        background-color: rgba(51, 51, 51,0.9);
+        position: fixed;
+        top:0px;
+        right: 0px;
+        left: 0px;
+        border-radius: 0px;
         padding: 0px;
         flex-direction: column;
         align-items: start;
     }
     .nav-list {
-        box-shadow: 1px 1px 8px black;
-        border-radius: 10px;
-        background: linear-gradient(35deg ,rgb(121, 121, 233),rgb(14, 14, 197));
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: transparent;
+        opacity: 0.8;
         color: white;
-        width: 90%;
-        height: 60vh;
+        width: 100%;
         flex-direction: column;
         align-items: center;
-        position: fixed;
-        top: 10vh;
-        left: -1000vw;
+        gap:50px;
+        padding: 100px 0px;
+        display: none; 
+        position: relative;
+        top:-1000vh;
+        transition: top 1.5s;
+    }
+    .nav-list li{
+        padding: 10px 20px;
     }
     .toggle-btn {
         display: inherit;
