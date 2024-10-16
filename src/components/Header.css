@@ -47,7 +47,7 @@
 }
 .toggle-btn {
     position: absolute;
-    top:20px;
+    top:20px; 
     right: 15px;
     font-size: 40px;
     display: flex;
@@ -60,9 +60,7 @@
 }
 
 .menu-btn {
-    display: none;
-    width: 30px;
-    height: 30px;
+    visibility: hidden;
     font-size: 30px;
 }
 @media screen and (max-width: 980px) { 
@@ -91,19 +89,19 @@
         border-top-left-radius: 22px;
         border-bottom-left-radius: 22px;
         background-color:rgba(0, 0, 0, 0.9); 
-        right: -999vw;  
+        right: 0px;  
         display: none;
     }
     .nav-bar.show{
         display: inherit;
-        right: 0px;
+        /* right: 0px; */
     }
     .close-btn{
         display: inherit;
 
     }
-    .menu-btn{
-        display: inherit;
+    .menu-btn.show{
+        visibility: visible;
     }
 }
 

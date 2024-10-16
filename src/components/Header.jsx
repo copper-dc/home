@@ -6,8 +6,10 @@ import { IoMenu } from "react-icons/io5";
 import { useState } from "react";
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(true);
   const toggle = () => {
     document.getElementById("nav").classList.toggle("show");
+    document.getElementById("open").classList.toggle("show");
   }
   return (
     <div className="nav-container">
@@ -21,7 +23,8 @@ const Header = () => {
             <li className="btn"><CiLogin className="icon"/>Login</li>
             <span className="toggle-btn"><IoCloseCircleOutline className="close-btn" onClick={toggle}/></span>
         </ul>
-        <IoMenu className="menu-btn" onClick={toggle}/>
+        <IoMenu className="menu-btn show" id="open" onClick={toggle}/>
+        
     </div>
   )
 }
