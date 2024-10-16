@@ -1,16 +1,102 @@
 .nav-container {
-    width: 100vw;
+    width: 950px;
+    padding: 20px 10px;
     display: flex;
-    background-color: aqua;
+    align-items: center;
+    margin: 10px auto;
+    border-radius: 20px;
+    border: 1px solid #04ae8c;
 }
 .logo {
     width: 20%;
     text-align: center;
 }
-
 .nav-bar {
     list-style: none;
     width: 80%;
     display: flex;
     justify-content: space-around;
+}
+.nav-bar li {
+    text-align: center;
+    padding: 10px;
+}
+.nav-bar li:hover {
+    cursor: pointer;
+    color: rgb(204, 208, 211);
+}
+.link {
+    background-color: transparent;
+}
+.btn:hover {
+    background-color: #6350e1;
+    opacity: 1;
+}
+.btn {
+    border-radius: 8px;
+    background-color: #664ef8;
+    opacity:0.8;
+    width: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+.icon {
+    background-color: #664ef8;
+}
+.toggle-btn {
+    position: absolute;
+    top:10px;
+    right: 10px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.close-btn {
+    display: none;
+    background-color: rgb(42 48 50);
+}
+
+.menu-btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+}
+@media screen and (max-width: 980px) { 
+    .nav-container {
+        width: 500px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .nav-bar {
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        padding-left: 0px;
+        height: 100vh;
+        position: absolute;
+        justify-content: space-evenly;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color:rgb(42 48 50); 
+        right: -9999vw;  
+        transition: right 0.25s ease;
+    }
+    .nav-bar.show{
+        display: inherit;
+        right: 0px;
+    }
+    .close-btn{
+        display: inherit;
+
+    }
+    .menu-btn{
+        display: inherit;
+    }
 }
