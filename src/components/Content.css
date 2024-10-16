@@ -23,10 +23,12 @@
     width: fit-content;
     font-size: 18px;
     color: #f2f2f2;
-    background-color: #04ae8c;
+    background-color:rgb(4 ,174 ,140,0.8);
     padding:8px 10px;
     border-radius: 8px;
 }
-.div p{
+.div p:hover{
     cursor: pointer;
+    background-color:rgb(4 ,174 ,140,1);
+    
 }
