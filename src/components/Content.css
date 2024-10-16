@@ -1,0 +1,32 @@
+.div {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 20px;
+}
+.div h2{
+    text-align: center;
+    line-height: 50px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
+.div span {
+    border-radius: 12px;
+    background-color: #004bdd;
+    padding: 8px 10px;
+
+}
+.div p{
+    width: fit-content;
+    font-size: 18px;
+    color: #f2f2f2;
+    background-color: #04ae8c;
+    padding:8px 10px;
+    border-radius: 8px;
+}
+.div p{
+    cursor: pointer;
+}

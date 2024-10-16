@@ -24,7 +24,6 @@ const Header = () => {
             <span className="toggle-btn"><IoCloseCircleOutline className="close-btn" onClick={toggle}/></span>
         </ul>
         <IoMenu className="menu-btn show" id="open" onClick={toggle}/>
-        
     </div>
   )
 }
