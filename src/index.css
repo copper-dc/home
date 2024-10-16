@@ -6,6 +6,6 @@
     background-color: #0e1011;
     color: white;
     cursor:default;
-    overflow-x: hidden;
+    /* overflow: hidden; */
     font-family: 'Switzer', sans-serif;
 }

@@ -47,8 +47,8 @@
 }
 .toggle-btn {
     position: absolute;
-    top:10px;
-    right: 10px;
+    top:20px;
+    right: 15px;
     font-size: 40px;
     display: flex;
     align-items: center;
@@ -56,7 +56,7 @@
 }
 .close-btn {
     display: none;
-    background-color: rgb(42 48 50);
+    background-color: rgba(0, 0, 0, 0.9); 
 }
 
 .menu-btn {
@@ -71,22 +71,28 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: start;
+        margin: 10px auto;
+    }
+    .logo{
+        padding-left: 10px;
+        width:auto;
     }
     .nav-bar {
         position: relative;
         flex-direction: column;
         align-items: center;
-        width: 40%;
+        width: 60%;
         padding-left: 0px;
         height: 100vh;
         position: absolute;
         justify-content: space-evenly;
         top: 0px;
-        right: 0px;
         bottom: 0px;
-        background-color:rgb(42 48 50); 
-        right: -9999vw;  
-        transition: right 0.25s ease;
+        border-top-left-radius: 22px;
+        border-bottom-left-radius: 22px;
+        background-color:rgba(0, 0, 0, 0.9); 
+        right: -999vw;  
+        display: none;
     }
     .nav-bar.show{
         display: inherit;
@@ -99,4 +105,23 @@
     .menu-btn{
         display: inherit;
     }
+}
+
+@media screen and (max-width:600px){
+    .nav-container {
+        width: 350px;
+    }
+    .nav-bar {
+        width: 70%;
+    }
+    
+}
+@media screen and (max-width:420px){
+    .nav-container {
+        width: 300px;
+    }
+    .nav-bar {
+        width: 80%;
+    }
+    
 }
