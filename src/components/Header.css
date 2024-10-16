@@ -1,0 +1,16 @@
+.nav-container {
+    width: 100vw;
+    display: flex;
+    background-color: aqua;
+}
+.logo {
+    width: 20%;
+    text-align: center;
+}
+
+.nav-bar {
+    list-style: none;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
